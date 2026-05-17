@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* background */
+#background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+/* Verana base */
+#verana, #veranablink {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    width: 300px;
+}
+
+/* blinking swap */
+#verana {
+    animation: blink 4s infinite;
+}
+
+#veranablink {
+    animation: blink 4s infinite;
+}
+
+@keyframes blink {
+    0%, 90%, 100% { opacity: 1; }
+    92% { opacity: 0; }
+}
+</style>
+
 </head>
 
 <body>
 
-<div id="game">
+<img src="allback.png" id="background">
 
-  <img src="allback.png" id="background">
-
-  <img src="verana.png" id="verana">
-  <img src="veranablink.png" id="veranablink">
-
-</div>
+<img src="verana.png" id="verana">
+<img src="veranablink.png" id="veranablink">
 
 </body>
 </html>
