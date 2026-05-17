@@ -13,7 +13,7 @@ html, body {
 #background {
     position: absolute;
     width: 300px;
-    height: auto;
+    height: 300px;
     object-fit: center;
     background-color: black;
 }
