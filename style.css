@@ -1,23 +1,27 @@
-html, body {
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
     body {
-    margin: 0;
-    height: 10vh;
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-}
-}
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(255, 209, 227);
+    }
 
-#game {
-    position: center;
-    inset: 0;
-    overflow: hidden;
-}
+    img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+    }
+  </style>
+</head>
 
-#background {
-    position: absolute;
-    width: 40px;
-    height: 60px;
-    object-fit: center;
-    background-color: black;
-}
+<body>
+
+  <img src="yourimage.png">
+
+</body>
+</html>
