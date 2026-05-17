@@ -1,17 +1,17 @@
 html, body {
     margin: 10;
-    padding: 10;
+    padding: 0;
     overflow: hidden;
 }
 
 #game {
-    position: fixed;
+    position: center;
     inset: 0;
     overflow: hidden;
 }
 
 #background {
-    position: absolute;
+    position: center;
     inset: 0;
     width: 100%;
     height: 100%;
