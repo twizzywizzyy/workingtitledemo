@@ -12,7 +12,7 @@ html, body {
 
 #background {
     position: absolute;
-    width: auto;
+    width: 300px;
     height: auto;
     object-fit: center;
     background-color: black;
