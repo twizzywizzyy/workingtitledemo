@@ -16,8 +16,8 @@ html, body {
 
 #background {
     position: absolute;
-    width: fit;
-    height: fit;
+    width: 400px;
+    height: 600px;
     object-fit: center;
     background-color: black;
 }
