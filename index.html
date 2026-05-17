@@ -40,20 +40,20 @@ html, body {
 /* animation controls BOTH */
 @keyframes blinkSwap {
     0%, 90%, 100% {
-        opacity: 1; /* verana visible */
+        opacity: 0; /* verana visible */
     }
     91% {
-        opacity: 0;
+        opacity: 1;
     }
 }
 
 /* apply swap */
 #veranablink {
-    animation: blinkSwap 4s infinite reverse;
+    animation: blinkSwap 2s infinite reverse;
 }
 
 #verana {
-    animation: blinkSwap 4s infinite ;
+    animation: blinkSwap 2s infinite ;
 }
 </style>
 
