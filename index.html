@@ -27,18 +27,33 @@ html, body {
     width: 300px;
 }
 
-/* blinking swap */
-#veranablink {
-    animation: blink 2s infinite;
-}
-
+/* normal state */
 #verana {
-    animation: blink 4s infinite;
+    opacity: 1;
 }
 
-@keyframes blink {
-    0%, 90%, 100% { opacity: 1; }
-    92% { opacity: 0; }
+/* blink image hidden normally */
+#veranablink {
+    opacity: 0;
+}
+
+/* animation controls BOTH */
+@keyframes blinkSwap {
+    0%, 90%, 100% {
+        opacity: 1; /* verana visible */
+    }
+    91% {
+        opacity: 0;
+    }
+}
+
+/* apply swap */
+#verana {
+    animation: blinkSwap 4s infinite;
+}
+
+#veranablink {
+    animation: blinkSwap 4s infinite reverse;
 }
 </style>
 
