@@ -1,7 +1,7 @@
 html, body {
     body {
     margin: 0;
-    height: 100vh;
+    height: 10vh;
     display: flex;
     justify-content: center; 
     align-items: center;     
