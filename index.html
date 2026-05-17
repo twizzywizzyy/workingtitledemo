@@ -34,26 +34,27 @@ html, body {
 
 /* blink image hidden normally */
 #veranablink {
-    opacity: 0;
-}
-
-/* animation controls BOTH */
-@keyframes blinkSwap {
-    0%, 90%, 100% {
-        opacity: 1; /* verana visible */
-    }
-    91% {
-        opacity: 0;
-    }
-}
-
-/* apply swap */
-#veranablink {
-    animation: blinkSwap 4s infinite reverse;
+    opacity: 1;
 }
 
 #verana {
-    animation: blinkSwap 2s infinite ;
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    width: 300px;
+    animation: blink 4s infinite;
+}
+
+@keyframes blink {
+    0%, 92%, 100% {
+        opacity: 1; /* eyes open */
+    }
+    94% {
+        opacity: 0; /* eyes closed */
+    }
+    96% {
+        opacity: 1; /* open again */
+    }
 }
 </style>
 
