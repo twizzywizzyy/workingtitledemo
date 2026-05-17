@@ -3,12 +3,12 @@
 <head>
   <style>
     body {
-      margin: 0;
+      margin: 10;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgb(255, 209, 227);
+      background-color: black;
     }
 
     img {
@@ -19,9 +19,6 @@
   </style>
 </head>
 
-<body>
-
-  <img src="yourimage.png">
 
 </body>
 </html>
