@@ -1,30 +1,47 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: black;
-      overflow: hidden;
-    }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
-    img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 200px;
-    }
-  </style>
-</head>
+#game {
+  position: fixed;
+  inset: 0;
+}
 
-<body>
+/* BACKGROUND */
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  <img src="allback.png">
+/* VERANA POSITION + SIZE */
+#verana, #veranablink {
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  width: 300px;
+}
 
-</body>
-</html>
+/* BLINK SYSTEM */
+#verana {
+  opacity: 1;
+  animation: blinkSwap 4s infinite;
+}
+
+#veranablink {
+  opacity: 0;
+  animation: blinkSwap 4s infinite;
+}
+
+/* SWAP VISIBILITY */
+@keyframes blinkSwap {
+  0%, 90%, 100% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 0;
+  }
+}
