@@ -3,7 +3,7 @@
 <head>
   <style>
     body {
-      margin: 10;
+      marginright: 10;
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -12,9 +12,12 @@
     }
 
     img {
-      max-width: 90%;
-      max-height: 90%;
-      object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
     }
   </style>
 </head>
